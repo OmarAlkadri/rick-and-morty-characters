@@ -2,7 +2,7 @@
 "use client"; // يجب إضافة هذا السطر في الأعلى
 import { useFilterStore } from '@/stores/filterStore';
 import { useCharactersQuery } from '@/lib/api';
-import CharacterCard from './_components/CharacterCard';
+import CharacterCard, { Character } from './_components/CharacterCard';
 import FilterForm from './_components/FilterForm';
 import LoadingSpinner from './_components/LoadingSpinner';
 
@@ -20,7 +20,7 @@ const CharactersPage = () => {
             {isError && <p>Error loading characters...</p>}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {data?.map((character: any) => (
+                {data?.map((character: Character) => (
                     <CharacterCard key={character.id} character={character} />
                 ))}
             </div>

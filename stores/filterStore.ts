@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-type FilterState = {
+export type FilterState = {
     status: string;
     gender: string;
     setStatus: (status: string) => void;

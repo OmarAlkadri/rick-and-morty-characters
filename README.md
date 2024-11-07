@@ -44,3 +44,7 @@ Bu projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izl
 
    ```bash
    git clone https://github.com/username/rick-and-morty-characters.git
+
+1. **Projeyi Çalıştırın:**
+
+   ```pnpm or npm``` ```run dev```
